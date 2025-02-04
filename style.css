@@ -5,6 +5,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.8;
+    /* Prevent horizontal scrolling */
+
+    width: 100%;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+
+
 }
 
 p {
@@ -127,25 +133,64 @@ h5 {
     color: #333;
 }
 
-/* Footer */
+
+
+#education p {
+    max-width: 1000px; /* Limit the width of text for readability */
+    margin: 0 auto 2.5rem; /* Center the text and add spacing between paragraphs */
+    text-align: justify; /* Align the text for a neat look */
+}
+
+#skills p {
+    max-width: 1000px; /* Limit the width of text for readability */
+    margin: 0 auto 2.5rem; /* Center the text and add spacing between paragraphs */
+    text-align: justify; /* Align the text for a neat look */
+}
+
+#certifications p {
+    max-width: 1000px; /* Limit the width of text for readability */
+    margin: 0 auto 2.5rem; /* Center the text and add spacing between paragraphs */
+    text-align: justify; /* Align the text for a neat look */
+}
+
+
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     background-color: #333;
     color: white;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: flex; /* Flex layout for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align elements */
+    justify-content: center; /* Vertically center elements */
+}
+
+.footer-content p{
+    color: white;
+}
+
+.footer-socials {
+    margin-bottom: 1rem; /* Space below social icons */
 }
 
 .footer-socials a {
-    margin: 0 10px;
-    font-size: 1.5rem;
-    color: #61dafb;
-    transition: color 0.3s, transform 0.3s;
+    margin: 0 10px; /* Even spacing between icons */
+    font-size: 1.5rem; /* Icon size */
+    color: #61dafb; /* Default icon color */
+    transition: 0.3s ease; /* Combined color and transform transitions */
 }
 
 .footer-socials a:hover {
-    color: white;
-    transform: scale(1.2);
+    color: white; /* Highlight effect */
+    transform: scale(1.2); /* Subtle zoom effect */
 }
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
